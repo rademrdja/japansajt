@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/anketa-style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="css/img/ikonica.ico" type="image/x-icon">
+    <title>Anketa | JAPAN</title>
+</head>
+
+<body>
+    <nav class="nova-nav">
+        <ul>
+            <li><a href="index.html">POČETNA</a></li>
+            <li><a href="simboli.html">SIMBOLI</a></li>
+            <li><a href="kompanije.html">KOMPANIJE</a></li>
+            <li><a href="zanimljivosti.html">ZANIMLJIVOSTI</a></li>
+            <li><a href="anketa.html">ANKETA</a></li>
+        </ul>
+        <div class="nav-dugme">
+            <div class="nav-linija"></div>
+            <div class="nav-linija"></div>
+            <div class="nav-linija"></div>
+        </div>
+    </nav>
+    <div id="anketaDiv">
+        <div class="forma" id="ulaznaDiv">
+            <form id="ulaznaForm">
+                <fieldset>
+                    <br>
+                    <output>Pozdrav, <br><br>Ovo je kratka anketa o nasem sajtu i ideji koju smo na ovom sajtu
+                        predstavili. Ako mozete da ulozite minut vaseg vremena kako biste popunili ovu anketu, mi bismo
+                        Vam bili veoma zahvalni. <br><br> Hvala na razumevanju! <br><br>Za pocetak ankete mozete
+                        pritisnuti dugme ispod, ali mozete i samo pritisnuti taster ENTER. </output>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <input type="submit" autofocus value="Pocni anketu" id="ulaznaSubmit">
+                </fieldset>
+            </form>
+        </div>
+        <div class="forma" id="personalDiv">
+            <form id="personalForm">
+                <fieldset>
+                    <legend><b>1/3</b></legend>
+                    <br> <br>
+                    <output>Prvo, za vas imamo jedno pitanje licnog karaktera, a to je da nam kazete Vase ime,
+                        prezime i Vas licni email.</output>
+                    <br><br>
+                    <label for="imeTxt">Ime:</label>
+                    <br>
+                    <input required type="text" placeholder="Unesite ime..." id="imeTxt">
+                    <br>
+                    <label for="prezimeTxt">Prezime:</label>
+                    <br>
+                    <input required type="text" id="prezimeTxt" placeholder="Unesite prezime...">
+                    <br>
+                    <label for="emailTxt">Email:</label>
+                    <br>
+                    <input required type="email" id="emailTxt" placeholder="Unesite email...">
+
+                    <br>
+
+                    <input type="submit" value="&rarr;" class="submit">
+                    <a id="nazadPersonalBtn" class="nazadBtn">&larr;</a>
+                </fieldset>
+            </form>
+        </div>
+        <div class="forma" id="porekloDiv">
+            <form id="porekloForm">
+                <fieldset>
+                    <legend><b>2/3</b></legend>
+                    <br> <br>
+                    <output>Drugi deo ankete se tice vaseg mesta boravka, odnosno drzave gde trenutno zivite. Uzgred,
+                        hvala Vam sto ste ulozili trud da popunite prvi deo ankete.</output>
+                    <br><br>
+                    <input type="radio" value="srbija" name="porekloRadio" id="srbijaRadio">
+                    <label for="srbijaRadio">Srbija &nbsp;<img src="./css/img/anketa/srbijaFlag.svg" width="20px"
+                            height="15px"></label>
+                    <br>
+
+                    <input type="radio" value="japan" name="porekloRadio" id="japanRadio">
+                    <label for="japanRadio">Japan &nbsp;<img src="./css/img/anketa/japanFlag.png" width="20px"
+                            height="15px" />
+                    </label>
+                    <br>
+
+                    <input type="radio" value="ostalo" name="porekloRadio" id="ostaloRadio">
+                    <label for="ostaloRadio">Ostale drzave</label>
+                    <br>
+                    <br>
+                    <output>Da li ste naucili nesto novo na ovom sajtu?</output>
+                    <br>
+                    <br>
+                    <input type="radio" value="da" name="nauciliNovo" id="daRadio">
+                    <label for="daRadio">DA</label>
+
+
+                    <input type="radio" value="ne" name="nauciliNovo" id="neRadio">
+                    <label for="neRadio">NE</label>
+
+
+                    <input type="submit" value="&rarr;" class="submit">
+                    <a id="nazadPorekloBtn" class="nazadBtn">&larr;</a>
+                </fieldset>
+            </form>
+        </div>
+
+        <div class="forma" id="feedbackDiv">
+            <form id="feedbackForm">
+                <fieldset>
+
+                    <legend><b>3/3</b></legend>
+                    <br> <br>
+                    <output>Na kraju, kada ste stigli do ovog dela, ocenite ovaj websajt ocenom od 0 do 100, a zatim nam
+                        napisite neku poruku.
+
+                    </output>
+                    <br>
+                    <br>
+                    <label for="ocenaRange" id="prikaziOcena">Vasa ocena (0-100): <prikaziOcena> 50
+                        </prikaziOcena> </label>
+                    <input required value="50" type="range" min="0" max="100" step="1" id="ocenaRange">
+                    <br>
+                    <label for="messageTxt">Poruka za nas: </label>
+                    <br>
+                    <textarea required placeholder="Vasa poruka za nas" id="messageTxt" rows="5"></textarea>
+                    <br>
+
+                    <br>
+                    <input type="submit" value="&rarrb;" class="submit">
+                    <a id="nazadFeedbackBtn" class="nazadBtn">&larr;</a>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-nav">
+            <ul>
+                <li><a href="index.html">POČETNA</a></li>
+                <li><a href="simboli.html">SIMBOLI</a></li>
+                <li><a href="kompanije.html">KOMPANIJE</a></li>
+                <li><a href="zanimljivosti.html">ZANIMLJIVOSTI</a></li>
+                <li><a href="anketa.html">ANKETA</a></li>
+            </ul>
+        </div>
+        <div class="footer-linija"></div>
+        <div class="footer-dno">
+            <div>
+                <ul>
+                    <li><a href="index.html#ime">Poreklo imena</a></li>
+                    <li><a href="index.html#istorija">Istorija Japana</a></li>
+                    <li><a href="index.html#statistika">Statistika</a></li>
+                    <li><a href="index.html#zgrade">Japan u svetu</a></li>
+                    <li><a href="index.html#religija">Religija</a></li>
+                </ul>
+            </div>
+            <div class="footer-imena">
+                <p>Rade Mrđa</p>
+                <p>Isidora Miljković</p>
+                <p>Matija Nikolić</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="./scripts/firestore.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <script src="scripts/stranice-script.js"></script>
+</body>
+
+</html>
